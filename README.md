@@ -2,11 +2,50 @@
 
 ## Detta är en intern app som används av Hello World.
 
-* Klistra in en tabseparerad fil med data i övre textrutan.
-* Textrutan i mitten kommer att fyllas med data avsedd för email.
-* Textrutan längst ner kommer att fyllas med data avsedd för SMS.
+Appen innehåller fyra textrutor
 
-Följande kolumner används:
+* a0: data från WordPress
+* a: data från Excel
+* b: data till email-applikation
+* c: data till sms-applikation
+
+* All data är tabseparerad.
+
+* Klistra in till a0. a, b och c fylls.
+* Klistra in till a. b och c fylls.
+
+### Följande kolumner används i a0:
+
+* 01 Barn.förnamn
+* 03 Barn.efternamn 
+* 05 barn.födelsedag 
+* 06 barn.personnummer
+* 07 barn.email
+* 08 barn.mobil
+* 09 barn.streetadress1
+* 10 barn.streetadress2
+* 11 barn.city
+* 13 barn.zipcode
+
+* 16 Förälder1.förnamn
+* 18 Förälder1.förnamn
+* 20 Förälder1.email
+* 22 Förälder1.annanAdress
+* 23 Förälder1.streetadress1
+* 24 Förälder1.streetadress1
+* 25 Förälder1.city
+* 27 Förälder1.zipcode
+
+* 30 Förälder2.förnamn
+* 32 Förälder2.förnamn
+* 34 Förälder2.email
+* 36 Förälder2.annanAdress
+* 37 Förälder2.streetadress1
+* 38 Förälder2.streetadress1
+* 39 Förälder2.city
+* 41 Förälder2.zipcode
+
+### Följande kolumner används i a:
 
 * 02 Barn.förnamn
 * 03 Barn.efternamn
