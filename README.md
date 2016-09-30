@@ -9,7 +9,7 @@ Appen innehåller fyra textrutor
 * b: data till email-applikation
 * c: data till sms-applikation
 
-* All data är tabseparerad.
+All data är tabseparerad.
 
 * Klistra in till a0. a, b och c fylls.
 * Klistra in till a. b och c fylls.
@@ -18,15 +18,14 @@ Appen innehåller fyra textrutor
 
 * 01 Barn.förnamn
 * 03 Barn.efternamn 
-* 05 barn.födelsedag 
-* 06 barn.personnummer
-* 07 barn.email
-* 08 barn.mobil
-* 09 barn.streetadress1
-* 10 barn.streetadress2
-* 11 barn.city
-* 13 barn.zipcode
-
+* 05 Barn.födelsedag 
+* 06 Barn.personnummer
+* 07 Barn.email
+* 08 Barn.mobil
+* 09 Barn.streetadress1
+* 10 Barn.streetadress2
+* 11 Barn.city
+* 13 Barn.zipcode
 * 16 Förälder1.förnamn
 * 18 Förälder1.förnamn
 * 20 Förälder1.email
@@ -35,7 +34,6 @@ Appen innehåller fyra textrutor
 * 24 Förälder1.streetadress1
 * 25 Förälder1.city
 * 27 Förälder1.zipcode
-
 * 30 Förälder2.förnamn
 * 32 Förälder2.förnamn
 * 34 Förälder2.email
