@@ -33,7 +33,7 @@ All data är tabseparerad.
 * 20 Förälder1.email
 * 22 Förälder1.annanAdress
 * 23 Förälder1.streetadress1
-* 24 Förälder1.streetadress1
+* 24 Förälder1.streetadress2
 * 25 Förälder1.city
 * 27 Förälder1.zipcode
 * 30 Förälder2.förnamn
@@ -41,7 +41,7 @@ All data är tabseparerad.
 * 34 Förälder2.email
 * 36 Förälder2.annanAdress
 * 37 Förälder2.streetadress1
-* 38 Förälder2.streetadress1
+* 38 Förälder2.streetadress2
 * 39 Förälder2.city
 * 41 Förälder2.zipcode
 
