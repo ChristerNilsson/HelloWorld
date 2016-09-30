@@ -9,12 +9,14 @@ Appen innehåller fyra textrutor
 * b: data till email-applikation
 * c: data till sms-applikation
 
-All data är tabseparerad.
+Klistra in data i a0 eller a.
 
 * Klistra in till a0. a, b och c fylls.
 * Klistra in till a. b och c fylls.
 
-### Följande kolumner används i a0:
+All data är tabseparerad.
+
+### Kolumner i a0:
 
 * 01 Barn.förnamn
 * 03 Barn.efternamn 
@@ -43,7 +45,7 @@ All data är tabseparerad.
 * 39 Förälder2.city
 * 41 Förälder2.zipcode
 
-### Följande kolumner används i a:
+### Kolumner i a:
 
 * 02 Barn.förnamn
 * 03 Barn.efternamn
@@ -58,3 +60,30 @@ All data är tabseparerad.
 * 23 Förälder2.efternamn
 * 27 Förälder2.email
 * 28 Förälder2.mobil
+
+### Kolumner i b:
+
+* 01 Barn.förnamn
+* 02 Barn.efternamn
+* 03 Barn.email
+* 04 Barn.mobil
+* 05 Barn.pronomen
+* 06 Förälder.pronomen
+* 07 Föräldrar.kombinerad
+* 08 Förälder1.förnamn
+* 09 Förälder1.efternamn
+* 10 Förälder1.email
+* 11 Förälder1.mobil
+* 12 Förälder2.förnamn
+* 13 Förälder2.efternamn
+* 14 Förälder2.email
+* 15 Förälder2.mobil
+
+### Kolumner i c:
+
+* 01 förnamn
+* 02 efternamn
+* 03 category (child/adult)
+* 04 email
+* 05 mobil
+
