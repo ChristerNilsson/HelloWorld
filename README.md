@@ -14,7 +14,8 @@ Klistra in data i a0 eller a.
 * Klistra in till a0. a, b och c fylls.
 * Klistra in till a. b och c fylls.
 
-All data är tabseparerad.
+* Klistra INTE in rubrikraden.
+* All data måste vara tabseparerad.
 
 ### Kolumner i a0:
 

@@ -3,6 +3,8 @@ var a  // in/ut: Excel
 var b  // ut: email 
 var c  // ut: sms
 
+//HEADER0 = 'Namn (Prefix)	Namn (Förnamn)	Namn (Mellannamn)	Namn (Efternamn)	Namn (Suffix)	Födelsedatum	Namnlös	Barnets e-post	Barnets telefon	Medlems adress (Gatuadress)	Medlems adress (Gatuadress)	Medlems adress (Stad)	Medlems adress (Stat / Län)	Medlems adress (Postnummer)	Medlems adress (Land)	Målsman 1 (Prefix)	Målsman 1 (Förnamn)	Målsman 1 (Mellannamn)	Målsman 1 (Efternamn)	Målsman 1 (Suffix)	Målsmans e-post	Målsmans telefon	Annan adress?	Adress-målsman (Gatuadress)	Adress-målsman (Gatuadress)	Adress-målsman (Stad)	Adress-målsman (Stat / Län)	Adress-målsman (Postnummer)	Adress-målsman (Land)	Målsman 2 (Prefix)	Målsman 2 (Förnamn)	Målsman 2 (Mellannamn)	Målsman 2 (Efternamn)	Målsman 2 (Suffix)	Målsmans e-post	Målsmans telefon	Annan adress?	Adress-målsman (Gatuadress)	Adress-målsman (Gatuadress)	Adress-målsman (Stad)	Adress-målsman (Stat / Län)	Adress-målsman (Postnummer)	Adress-målsman (Land)	Jag godkänner att mitt barns och mina/våra personuppgifter hanteras i enlighet med  <a href="http://helloworld.camp/wp-content/uploads/2016/02/Hello-World-Personuppgiftspolicy.pdf" target="_blank">Hello World! personuppgiftpolicy</a>.	Skapad av användare (Användar-ID)	Inläggs-ID	Inläggsdatum	Källa till Url	Transaktions-ID	Belopp att betala	Betalningsdatum	Betalningsstatus	Inläggs-ID	Användaragent	Användar-IP'
+
 function setup() {
   a0 = select('#a0')
   a = select('#a')
@@ -78,6 +80,11 @@ function transform0() {
   var txt = a0.value()
   var lines = split(txt,"\n")
   var ar = ""
+  //var header = lines[0]
+  //if (header != HEADER0) {
+  //  alert('Illegal header!')
+  //  return
+  //}
   for (var rad of lines) {
     var cells = split(rad,"\t")    
     if (cells.length<45) continue
@@ -148,6 +155,7 @@ function transform() {
   var lines = split(txt,"\n")
   var br = ""
   var cr = ""
+  //var header = lines.shift()
   for (var rad of lines) {
     var cells = split(rad,"\t")    
     
