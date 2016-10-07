@@ -2,12 +2,12 @@
 
 ## Version 2
 
-## Detta är en intern app som används av Hello World.
+## Detta Ã¤r en intern app som anvÃ¤nds av Hello World.
 
-Appen innehåller fyra textrutor
+Appen innehÃ¥ller fyra textrutor
 
-* a0: data från WordPress
-* a: data från Excel
+* a0: data frÃ¥n WordPress
+* a: data frÃ¥n Excel
 * b: data till email-applikation
 * c: data till sms-applikation
 
@@ -18,7 +18,7 @@ Klistra in data i a0 eller a.
 
 * Klistra alltid in rubrikraden.
 * Kolumner visas i alla fyra textrutorna.
-* All data måste vara tabseparerad.
+* All data mÃ¥ste vara tabseparerad.
 
 ### Kolumner i a0:
 
