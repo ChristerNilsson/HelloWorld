@@ -1,4 +1,6 @@
-# HelloWorld
+# HelloWorld 
+
+## Version 2
 
 ## Detta är en intern app som används av Hello World.
 
@@ -14,88 +16,91 @@ Klistra in data i a0 eller a.
 * Klistra in till a0. a, b och c fylls.
 * Klistra in till a. b och c fylls.
 
-* Klistra INTE in rubrikraden.
+* Klistra alltid in rubrikraden.
+* Kolumner visas i alla fyra textrutorna.
 * All data måste vara tabseparerad.
 
 ### Kolumner i a0:
 
-* Barn
-  * 01 .förnamn
-  * 03 .efternamn 
-  * 05 .födelsedag 
-  * 06 .personnummer
+Exempel: C.firstName
+C = Child
+P = Parent
+
+* C
+  * 01 .firstName
+  * 03 .lastName 
+  * 05 .birthDay 
+  * 06 .personNummer
   * 07 .email
-  * 08 .mobil
-  * 09 .streetadress1
-  * 10 .streetadress2
+  * 08 .mobile
+  * 09 .streetAdress1
+  * 10 .streetAdress2
   * 11 .city
   * 13 .zipcode
-* Förälder1
-  * 16 .förnamn
-  * 18 .förnamn
+* P1
+  * 16 .firstName
+  * 18 .lastName
   * 20 .email
-  * 21 .mobil
-  * 22 .annanAdress
-  * 23 .streetadress1
-  * 24 .streetadress2
+  * 21 .mobile
+  * 22 .otherAdress
+  * 23 .streetAdress1
+  * 24 .streetAdress2
   * 25 .city
   * 27 .zipcode
-* Förälder2
-  * 30 .förnamn
-  * 32 .förnamn
+* P2
+  * 30 .firstName
+  * 32 .lastName
   * 34 .email
-  * 35 .mobil
-  * 36 .annanAdress
-  * 37 .streetadress1
-  * 38 .streetadress2
+  * 35 .mobile
+  * 36 .otherAdress
+  * 37 .streetAdress1
+  * 38 .streetAdress2
   * 39 .city
   * 41 .zipcode
 
 ### Kolumner i a:
 
-* Barn
-  * 02 .förnamn
-  * 03 .efternamn
-  * 04 .kön
+* C
+  * 02 .firstName
+  * 03 .lastName
+  * 04 .sex
   * 07 .email
-  * 08 .mobil
-* Förälder1
-  * 12 .förnamn
-  * 13 .efternamn
+  * 08 .mobile
+* P1
+  * 12 .firstName
+  * 13 .lastName
   * 17 .email
-  * 18 .mobil
-* Förälder2
-  * 22 .förnamn
-  * 23 .efternamn
+  * 18 .mobile
+* P2
+  * 22 .firstName
+  * 23 .lastName
   * 27 .email
-  * 28 .mobil
+  * 28 .mobile
 
 ### Kolumner i b:
 
-* Barn
-  * 01 .förnamn
-  * 02 .efternamn
-  * 03 .email
-  * 04 .mobil
-  * 05 .pronomen
-  * 06 Förälder.pronomen
-  * 07 Föräldrar.kombinerad
-* Förälder1
-  * 08 .förnamn
-  * 09 .efternamn
-  * 10 .email
-  * 11 .mobil
-* Förälder2
-  * 12 .förnamn
-  * 13 .efternamn
-  * 14 .email
-  * 15 .mobil
+* C
+  * 01 .combined     Anna, Birgitta och Cecilia
+  * 02 .lastName 
+  * 03 .pronoun      han/hon/dom    
+  * 04 P.pronoun     Du/Ni
+  * 05 P.combined    Astrid och Bertil
+* P1
+  * 06 .firstName
+  * 07 .lastName
+  * 08 .email
+  * 09 .mobile
+* P2
+  * 10 .firstName
+  * 11 .lastName
+  * 12 .email
+  * 13 .mobile
 
 ### Kolumner i c:
 
-* 01 förnamn
-* 02 efternamn
-* 03 category (child/adult)
+* 01 firstName
+* 02 lastName
+* 03 category
 * 04 email
-* 05 mobil
+* 05 mobile
 
