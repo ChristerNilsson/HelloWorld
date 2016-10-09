@@ -78,6 +78,11 @@ function prettyPhone(s) {
   return s  
 }
 
+function prettyZipcode(zip) {
+  var zip = zip.toString().replace(' ','')
+  return zip.slice(0, 3) + " " + zip.slice(3)
+}
+
 function equal(a,b) {
   a = a.split("\t")
   b = b.split("\t")
@@ -95,8 +100,31 @@ function equal(a,b) {
   return true
 }
 
+function moveMobile(res,i,j) {
+  console.log(res[i])
+  if (res[i] === null) return
+  if (res[i].length===13 && res[i].startsWith("07")) return
+  res[j] = res[i]
+  res[i] = ""
+}
+
 function utskick(zipcode) {return zipcode < "200" ? "Utskick" : ""  }
-function capitalize1(string) {return string.charAt(0).toUpperCase() + string.slice(1);}
+
+function capitalize1(string) { // eva-stina => Eva-Stina
+  var state = 0
+  var res = ""
+  for (var i=0; i<string.length; i++) {
+    var ch = string[i]
+    if (state==0) {
+      ch = ch.toUpperCase()
+      state=1
+    }
+    res += ch;
+    if (ch==' ' || ch=='-') state=0
+  }
+  return res
+}
+  
 function capitalize(string) {return string.toUpperCase();}
 
 function transform_a0() {
@@ -125,7 +153,7 @@ function transform_a0() {
     res.push(cells[7]) // 8 barn.email
     res.push(prettyPhone(cells[8])) // 9 barn.mobil
     res.push(capitalize1(cells[9]) + cells[10]) // 10 barn.streetadr
-    res.push(cells[11]) // 11 barn.zipcode
+    res.push(prettyZipcode(cells[11])) // 11 barn.zipcode
     res.push(capitalize(cells[13])) // 12 barn.city
 
     res.push(capitalize1(cells[16]))  // 13 parent1.förnamn
@@ -138,11 +166,11 @@ function transform_a0() {
     res.push("") // 20 parent1.otherTel
     if (cells[22]=="Annan adress?") {
       res.push(capitalize1(cells[23]) + cells[24]) // 21 parent1.streetadr
-      res.push(cells[25]) // 22 parent1.zipcode
+      res.push(prettyZipcode(cells[25])) // 22 parent1.zipcode
       res.push(capitalize(cells[27])) // 23 parent1.city
     } else {
       res.push(capitalize1(cells[9]) + cells[10]) // 21 parent1.streetadr
-      res.push(cells[11]) // 22 parent1.zipcode
+      res.push(prettyZipcode(cells[11])) // 22 parent1.zipcode
       res.push(capitalize(cells[13])) // 23 parent1.city
     }
 
@@ -156,11 +184,11 @@ function transform_a0() {
     res.push("") // 31 parent2.othertel
     if (cells[36]=="Annan adress?") {
       res.push(capitalize1(cells[37]) + cells[38]) // 32 parent2.streetadr
-      res.push(cells[39]) // 33 parent2.zipcode
+      res.push(prettyZipcode(cells[39])) // 33 parent2.zipcode
       res.push(capitalize(cells[41])) // 34 parent2.city
     } else {
       res.push(capitalize1(cells[9]) + cells[10]) // 32 parent2.streetadr
-      res.push(cells[11]) // 33 parent2.zipcode
+      res.push(prettyZipcode(cells[11])) // 33 parent2.zipcode
       res.push(capitalize(cells[13])) // 34 parent2.city
     }
     
@@ -170,6 +198,10 @@ function transform_a0() {
     res.push("") // 38 siblings
     res.push("") // 39 comment
     res.push(utskick(cells[11])) // 40 sendList
+    
+    moveMobile(res,19,20)
+    moveMobile(res,30,31)
+    
     ar += join(res,"\t") + "\n"
   }
   a.value(ar)
